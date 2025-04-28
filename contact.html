@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header, footer {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #2980b9;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #1abc9c;
+}
+
+main {
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Bouton retour en haut */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contactez-nous</h1>
+  </header>
+  <main>
+    <h1>Veuillez nous contacter </h1>
+    <!-- les liens pour être en contact-->
+    <p>Pour nous contacter , Cliquer ici:
+      <a href="malito:paulkalombola " target="_blank">sur facebook</a>
+    </p>
+     <!-- les liens vers le compte facebook -->
+     <p>Retrouver nous sur facebook/ Paul Kalombola</p>
+     <a href="https://www.facebook.com/paulkalombola">
+    <img src="image/AE.JPG" alt="photo illistrative du Shop">
+    <h2>Formulaire de contact</h2>
+    <form>
+      <label>Nom:</label><input type="........."><br>
+      <label>Email:</label><input type="email"><br>
+      <label>Message:</label><textarea></textarea><br>
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+   <nav>
+      <ul>
+        <a href="Accueil.html">Accueil</a>
+        <a href="A propos.html">A propos</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>        
+        <a href="faq.html">FAQ</a>
+      </ul>
+      <h2>Soyez le(la) bienvenue </h2>
+    </nav>
+</body>
+</html>

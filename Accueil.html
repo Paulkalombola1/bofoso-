@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Accueil</title>
+  <link rel="stylesheet" type="text/css" href="style/styles.css">
+  <style>
+    /* style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header, footer {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #2980b9;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #1abc9c;
+}
+
+main {
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Bouton retour en haut */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+  </style>
+  <script src="script.js" defer></script>
+  <script>// script.js
+
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
+
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+window.onload = showSlides;
+
+</script>
+</head>
+<body>  
+  <header>
+    <h1><p>Bienvenue sur notre page </p></h1>
+      <h1><p> Kal's Shop service</p></h1>
+</h1>
+    <nav>
+      <ul>
+        <a href="Accueil.html">Accueil</a>
+        <a href="A propos.html">A propos</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </ul>
+</body>
+    </nav>
+  </header>
+  <main>
+    
+      
+    <h1>Page d'accueil</h1>
+     <img src="image/AG.JPG" alt="photo illistrative du Shop">
+    <h1><p>Bienvenue sur notre site  !</p></h1>
+     
+     <img src="image/AA.JPG" alt="photo illistrative du Shop">
+    <button onclick="saluer()">Cliquez-moi</button>
+
+  </main>
+  <style>
+    /* style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+header, footer {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background-color: #2980b9;
+  overflow: hidden;
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #1abc9c;
+}
+
+main {
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Bouton retour en haut */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+  </style>
+  <script src="script.js" defer></script>
+  <script>// script.js
+
+// Animation fade in automatique (déjà via CSS)
+// Bouton retour en haut
+
+const backToTop = document.getElementById("backToTop");
+
+window.onscroll = () => {
+  if (document.documentElement.scrollTop > 200) {
+    backToTop.style.display = "block";
+  } else {
+    backToTop.style.display = "none";
+  }
+};
+
+backToTop.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+</script>
+</head>
+<body>  
+  <h1><p>Bienvenue chez Kal’s Shop Service</p></h1>
+
+Votre solution pratique, rapide et fiable au quotidien.
+Chez Kal’s Shop Service, nous sommes plus qu’un simple magasin — nous sommes votre partenaire de confiance pour tous vos besoins du quotidien. Que ce soit pour l’achat de produits essentiels, des services sur mesure ou des conseils personnalisés, nous sommes là pour vous servir avec professionnalisme et bonne humeur.</p>
+<h1><p>Qui sommes-nous ?</p></h1>
+<img src="image/AC.JPG" alt="photo illistrative du Shop">
+<P>Kal’s Shop Service, c’est un espace dynamique fondé sur l’écoute, la qualité et la proximité. Depuis [année], nous accompagnons particuliers, familles et professionnels en leur proposant une large gamme de produits et de services, le tout au même endroit.
+Ce que nous proposons</P>
+
+<P>Nos services peuvent inclure (à adapter selon les spécialités du magasin) :</P>
+
+<P>Vente de produits divers : électroniques, accessoires, pièces détachées, vêtements, outils, gadgets, etc.
+
+Services express : recharge mobile, paiement de factures, transfert d’argent.
+Pourquoi choisir Kal’s Shop Service ?
+
+Un service rapide et efficace
+
+Une équipe accueillante et à l’écoute
+
+Des produits fiables à prix abordables
+
+Un emplacement pratique et accessible
+
+Des services pensés pour vous simplifier la vie
+
+
+
+<P>Nos engagements</P>
+
+Chez Kal’s Shop Service, chaque client est important. Nous nous engageons à vous offrir :
+
+Des solutions adaptées à vos besoins
+
+Des conseils honnêtes et transparents
+
+Une assistance continue même après la vente
+
+Une ambiance conviviale et respectueuse
+
+<h2><P>Venez nous rendre visite !</P></h2>
+
+<h3><p>Adresse : [7ème Plateau N°12]</p></h3>
+<h3><p>Téléphone : [+243 828596832]</p></h3>
+<h4><p>Email : [paulkalombola15@gmail.com]</p></h4>
+<h5><p>Horaires d’ouverture : [Du Lundi au vendredi et De 8h30 à 18h30]</p></h5>
+
+  <header>
+    <h1>Bienvenue sur notre site Kal's Shop service</h1>
+    <nav>
+      <ul>
+        <a href="Accueil.html">Accueil</a>
+        <a href="A propos.html">A propos</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </ul>
+</body>
+</html>
